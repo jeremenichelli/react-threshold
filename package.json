@@ -1,0 +1,25 @@
+{
+  "name": "react-threshold",
+  "version": "0.0.0",
+  "description": "React component for scroll based controlled updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremenichelli/react-threshold.git"
+  },
+  "keywords": [
+    "react",
+    "scroll",
+    "threshold",
+    "component"
+  ],
+  "author": "Jeremias Menichelli",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jeremenichelli/react-threshold/issues"
+  },
+  "homepage": "https://github.com/jeremenichelli/react-threshold#readme"
+}
