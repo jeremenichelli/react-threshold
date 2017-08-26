@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      background-color: #d0d0d0;
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 350vh;
+      width: 350vw;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .test-element {
+      background-color: rebeccapurple;
+      position: relative;
+      height: 80vh;
+      margin: 0 auto;
+      top: 125vh;
+      left: 80vw;
+      width: 80vw;
+    }
+
+    .metrics-panel {
+      background-color: rgba(0, 0, 0, .75);
+      color: #fefefe;
+      font-size: 14px;
+      padding: 0.5em 1.25em;
+      position: fixed;
+      top: 1em;
+      left: 1em;
+      z-index: 1;
+    }
+
+    code {
+      font-family: Menlo, Consolas, Monaco, monospace;
+    }
+
+    .metrics-panel span {
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+
+  <!-- STATS -->
+  <script>
+    (function() {
+      var script = document.createElement('script');
+      script.async = true;
+
+      script.onload = function() {
+        var stats = new Stats();
+
+        stats.dom.style = 'right:1em;top:1em;position:fixed';
+        document.body.appendChild(stats.dom);
+
+        requestAnimationFrame(function loop(){
+          stats.update();
+          requestAnimationFrame(loop);
+        });
+      };
+      script.src='https://rawgit.com/mrdoob/stats.js/master/build/stats.min.js';
+      document.head.appendChild(script);
+    })();
+  </script>
+</body>
+</html>
