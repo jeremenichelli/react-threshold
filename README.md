@@ -1,6 +1,6 @@
 # react-threshold
 
-React component wrapping [threshold](https://github.com/jeremenichelli/threshold) library. Allows to wrap components and receive props about the visible area and trajectory across the viewport.
+React component for [threshold](https://github.com/jeremenichelli/threshold) library. Allows to wrap components and receive props about the visible area and trajectory across the viewport.
 
 Great for scroll based updates and stateful parallax animations.
 
@@ -55,16 +55,17 @@ class WrappedComponent extends React.Component {
 
 ### Controlled updates
 
-One nice thing about this component is that when its child is out of the viewport it will prevent updates, saving performance. If you need to change this behavior you can pass `forceUpdate={ true }` to `ReactThreshold` wrapper component.
+One nice thing about this component is that when its child is out of the viewport **it will prevent updates to save performance**. If you need to change this behavior you can pass `forceUpdate={ true }` to `ReactThreshold` wrapper component.
 
 If you need to gather inner **threshold** data you can pass a `onUpdate` prop method to `ReactThreshold`.
+
 
 ## Demo
 
 Clone this repo, install dependencies and run `npm test` to get a working demo for this component.
 
 
-### TODO
+## TODO
 
 - Add tests
 - Allow multiple children rendering
