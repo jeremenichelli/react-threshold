@@ -1,6 +1,6 @@
 {
   "name": "react-threshold",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "React component for scroll based controlled updates",
   "main": "index.js",
   "scripts": {
